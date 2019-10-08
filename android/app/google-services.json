@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "162747080145",
+    "firebase_url": "https://lenyademo-1569834027276.firebaseio.com",
+    "project_id": "lenyademo-1569834027276",
+    "storage_bucket": "lenyademo-1569834027276.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162747080145:android:8a4a9bc8569b1bebf594f0",
+        "android_client_info": {
+          "package_name": "com.example.lenya_one"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162747080145-n1t5nrjnquat701j4qt4vgftkcgdnrpd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhBSxHo-0XhwnSLU10Ex4Htr_iQPwRFoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162747080145-n1t5nrjnquat701j4qt4vgftkcgdnrpd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

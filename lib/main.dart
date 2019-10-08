@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import './Screens//Pageone.dart';
-import './Screens//Pagetwo.dart';
-import './Screens//Pagethree.dart';
-import './Screens//Pagefour.dart';
+import './Screens//HomePage.dart';
+import './Screens//RestaurantPage.dart';
+import './Screens//NearbyPage.dart';
+import './Screens//OrderPage.dart';
+import './Screens//QueuePage.dart';
+import './Screens//Firestore.dart';
 import './Tabs//TopTab.dart';
 
 void main() => runApp(MyApp());
@@ -55,19 +57,21 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget callPage(int selectedIndex) {
     switch (selectedIndex) {
       case 0:
-        return Pageone();
+        return Firestore();
         break;
       case 1:
-        return Pagetwo();
+        return RestaurantPage();
         break;
       case 2:
-        return Pagethree();
+        return NearbyPage();
         break;
       case 3:
-        return Pagefour();
+        return OrderPage();
         break;
+      case 4:
+        return QueuePage();
       default:
-        return Pageone();
+        return HomePage();
     }
   }
 
@@ -110,20 +114,20 @@ class _MyHomePageState extends State<MyHomePage> {
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.gps_fixed),
-            title: Text('Location'),
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.restaurant_menu),
             title: Text('Restaurant'),
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.gps_fixed),
+            title: Text('Nearby'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.assistant),
             title: Text('Favorites'),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_balance_wallet),
-            title: Text('Cash'),
+            icon: Icon(Icons.person),
+            title: Text('Account'),
           ),
         ],
         currentIndex: _selectedIndex,
